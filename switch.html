@@ -1,0 +1,43 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var nombres= ['Ignacio','Alejandro','Lionel'];
+			var listanombres = '';
+			for(var pos = 0 ;pos<nombres.length  ;pos++)
+			{
+				if(pos == 0)	
+				{
+					listanombres = nombres[pos];
+				}
+				else
+				{
+					listanombres = listanombres + ' ,  ' +nombres[pos];
+				}
+				switch(nombres[pos])
+				{
+					case 'Alejandro':
+						alert('Alejandro esta en la pos ' + pos);
+						break;
+					case 'Ignacio':
+						alert('Ignacio esta en la pos ' + pos);
+						break;
+					default:
+						alert('No estan los nombres');
+		
+			
+				}
+			}
+
+			alert('Esta en la Lista de Nombres : ' + listanombres);
+			
+			// Visual estudio code
+			// != difrente
+			// == Comparacion
+		</script>
+	</body>
+	
+</html>
+
+

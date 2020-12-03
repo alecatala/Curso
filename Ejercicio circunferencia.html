@@ -1,0 +1,34 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var pi = 3.14;
+			var radio  = prompt("Radio");
+			var datosValidos ="S";	
+			var longitud = 0;		
+			
+			if(radio <= 0)
+			{
+				alert("Debe ingresar el radio" );
+				datosValidos = "N";
+			}
+			
+			if(datosValidos=='S')
+			{
+				longitud= longitudcir(radio);
+				alert("radio : " + radio + " longitud "+ longitud );
+			}
+			
+			function longitudcir(radio)
+			{
+				
+				return radio * 2 * pi;
+			}
+			
+		</script>
+	</body>
+	
+</html>
+
+

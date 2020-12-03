@@ -1,0 +1,90 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<button onclick= "sumar()">Calculadora</button>
+		<button onclick= "sumarclick()">SumarClick</button>
+		<div >
+			<p id="cantclick">
+		</div>
+		
+		<div id="div">
+		</div>
+		<script>
+			var cantidadClick =0;
+
+			function sumarclick()
+			{
+				cantidadClick =  cantidadClick + 1;
+				document.getElementById("cantclick").innerHTML = cantidadClick;
+
+			}
+
+			function sumar()
+			{
+			var total = 0;
+			var Numero1  = 0;
+			var Numero2  = 0;
+			var terminar = "N";
+			var operacion = "";
+			var salir = "N";
+			var cuenta = "";
+			var primeravez = "S";
+			
+			while(terminar == "N")
+			{
+				Numero1 = 0;
+				Numero2 = 0;
+				operacion = "";
+				while(Numero1 == 0)
+				{
+					 Numero1 = prompt("Ingrese el numero 1 ");								
+				}		
+				salir = "N";
+				while(salir =="N")
+				{
+					 operacion = prompt("Debe ingresar la operacion(+,-):");		
+					 
+					 if(operacion=="+" || operacion=="-")
+						{
+							salir ="S";
+						}	 
+				}										
+								
+				while(Numero2 == 0)				
+				{					
+					 Numero2 = prompt("Ingrese el numero 2 ");				
+				}		
+				
+				switch(operacion)
+				{
+				
+					case "+":	
+						total =  Number(Numero1) + Number(Numero2);
+										
+						break;
+					case "-":			
+						total =   Numero1 - Numero2;
+						break;
+				}	
+								
+				cuenta = cuenta + Numero1  + operacion + Numero2;
+				primeravez = "N";
+				terminar = "S";
+			}
+			
+			
+			var para = document.createElement("p");	
+				para.innerHTML = "cuenta: " + cuenta + " El Total es : " +  total;
+				var element = document.getElementById("div");
+				element.appendChild(para);
+
+			//alert("cuenta: " + cuenta + " El Total es : " +  total );
+			
+			}
+			
+		</script>
+	</body>
+	
+</html>

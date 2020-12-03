@@ -1,0 +1,62 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+		<button onclick="parimparX()"> haz click> 	</button>
+		
+		
+		
+		<script>
+		
+		
+		function parimparX(Numero)
+		{
+			 
+			var salir = false;
+			var Numero = 0;
+			var resultado = 0 ;
+			while(!salir)
+			{
+				Numero = prompt("Numero");
+				if(Numero>0)
+				{
+					resultado = parimpar(Numero);
+					salir = true;
+				}
+				else
+				{
+					alert("Debe ingresar el numero");
+				}
+			}
+			alert("Numero : " + Numero + "- " + resultado );
+		}
+			
+			
+			
+			function parimpar(Numero)
+			{
+				var resultadoa = Numero%2;
+				var respuesta = "";
+				
+				
+				switch(resultadoa)
+				{
+					case 0:
+						respuesta = "es par";
+						break;
+					
+					default:
+						respuesta =  "impar";
+					
+				}
+				return respuesta;
+				
+			}
+			
+		</script>
+	</body>
+	
+</html>
+
+
