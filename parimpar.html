@@ -1,0 +1,38 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			
+			var Numero  = prompt("Numero");
+				
+			var resultado = parimpar(Numero);
+		
+			alert("Numero : " + Numero + "- " + resultado );
+			
+			function parimpar(Numero)
+			{
+				var resultadoa = Numero%2;
+				var respuesta = "";
+				
+				
+				switch(resultadoa)
+				{
+					case 0:
+						respuesta = "es par";
+						break;
+					
+					default:
+						respuesta =  "impar";
+					
+				}
+				return respuesta;
+				
+			}
+			
+		</script>
+	</body>
+	
+</html>
+
+

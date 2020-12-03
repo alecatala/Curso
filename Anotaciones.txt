@@ -1,0 +1,26 @@
+<script> src = ""  </script>
+-----------------------------------------------
+
+
+Tipo de variables
+Operadores
+matrices
+vectores
+
+if
+while
+for
+switch()
+case
+function}
+
+dom 
+
+	acceder por ID
+	tag name
+	classes
+	
+	document.getElementById("Nombre")
+	
+	document.createElement("
+	appendChild

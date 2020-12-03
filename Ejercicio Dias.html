@@ -1,0 +1,37 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var nombre = prompt("Nombre");
+			var edad = prompt("Edad");
+			var dias = 0;
+			var datosValidos = "S";
+			
+			if(nombre == "")
+			{
+				alert("Debe ingresar el nombre" );
+				datosValidos = "N";
+			}
+			if(edad <= 0)
+			{
+				alert("Debe ingresar la edad" );
+				datosValidos = "N";
+			}
+			if(datosValidos=='S')
+			{
+				dias= diasf(edad);
+				alert("Estimado " + nombre + " Dias Vividos "+ dias );
+			}
+			
+			function diasf(edad)
+			{
+				return edad * 365;
+			}
+			
+		</script>
+	</body>
+	
+</html>
+
+

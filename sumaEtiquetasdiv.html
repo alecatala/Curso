@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<style>
+		div
+		{
+			width: 100px;
+			height:  100 px;
+			border: 1px solid black;
+			margin: 10px;
+			float: left;
+			padding: 30px;
+			text-align: center;
+			background-color:lightgray;
+		}	
+		</style>
+	</head>
+	<body>
+		<div id= "diventer" onmouseenter="contarentradas()" >	
+		</div>
+	</br>
+		<div >	
+		</div>
+	</br>
+		<div >	
+		</div>
+	</br>
+		<p id="resultado"> </p>
+	</br>
+		<button onclick= "sumardiv()">Sumar DIV</button>
+		<script>
+			
+			function contarentradas()
+			{
+				document.getElementById("diventer").style.backgroundColor = "#0000CC";
+			}
+			function sumardiv()
+			{
+				var cantidad = 0;
+				var divHTML = document.getElementsByTagName("div");
+				cantidad = divHTML.length;
+				document.getElementById("resultado").innerHTML = "Cantidad Div: " + cantidad;
+
+			}
+
+			
+		</script>
+	</body>
+	
+</html>
